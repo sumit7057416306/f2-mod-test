@@ -1,65 +1,54 @@
+body {
+  background-color: rgb(162 137 114);
+}
+
+
 .container {
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    gap: 10px;
   }
-  #sum{
-    width: 50px;
-    height: 50px;
-  }
-
-  .image {
-    width: 25%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px;
+  
+  .container > image-gallery {
+    flex-basis: 350px;
+    position: relative;
     cursor: pointer;
   }
 
-  .form {
+  .container image-gallery img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .container image-gallery:hover {
+    transform: scale(1);
+  }
+  
+  #btn {
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+  }
+  .form-container {
+    text-align: center;
+    margin: 10px auto;
+    width: 1200px;
+  }
+  input {
+    width: 600px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .hide {
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
   }
 
-  .dice {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .coupon {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .congrats {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 50%;
+  .p {
+    color: white;
   }
